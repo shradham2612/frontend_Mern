@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import ques, {answers} from "../constants/ques";
+//import ques, {answers} from "../constants/ques";
 import { useDispatch } from "react-redux";
 
 import * as Action from "../redux/question_reducer";
@@ -21,8 +21,11 @@ export const useFetchQuestion = () => {
     (async () => {
       try {
        // let question = await ques;
-        const [{questions, answers}]=await getServerData(`${prcoess.env.REACT_APP_SERVER_HOSTNAME}/api/questions`, (data) =>data);
+     //   const [{questions, answers}]=await getServerData(`${process.env.REACT_APP_SERVER_HOSTNAME}/api/questions`, (data) =>data);
+        const [{questions, answers}]=await getServerData(`http://localhost:5000/api/questions`, (data) =>data);
         console.log({ questions, answers });
+        
+
         console.log("this is working" );
         if (questions.length > 0) {
           setGetData((prev) => ({

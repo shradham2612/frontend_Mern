@@ -60,7 +60,7 @@ const Quiz = () => {
 
       <Questions onChecked={onChecked} />
 
-      <div className="flex flex-row justify-around text-dblue mt-12">
+      <div className="flex flex-row justify-around text-dblue mt-8">
         {trace > 0 ? (
           <button
             onClick={onPrev}
@@ -75,7 +75,7 @@ const Quiz = () => {
         {trace == queue.length - 1 ? (
           <button
             onClick={onNext}
-            className="bg-orange p-4 lg:p-8 rounded-md w-2/6 sm:w-1/6 lg:w-52 lg:mt-12"
+            className="bg-orange p-4 lg:p-8 rounded-md w-2/6 sm:w-1/6 lg:w-52 lg:mt-8"
           >
            Submit
           </button>

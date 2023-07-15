@@ -21,15 +21,19 @@ export function flagResult(total_points, earnPoints) {
 //   return (auth ? children : <Navigate to={'/'} replace={true}></Navigate>)
 // }
 
-export async function getServerData(url, callback) {
+export async function getServerData(url,callback) {
+  
   const data =  await (await axios.get(url))?.data;
+  //const data = await axios.get(url);
+
   return callback ? callback(data) : data;
   //console.log(data);
+  
 }
 
 
 export async function postServerData(url,result, callback) {
-  const data =  await (await axios.get(url,result))?.data;
+  const data =  await (await axios.post(url,result))?.data;
   return callback ? callback(data) : data;
   //console.log(data);
 }

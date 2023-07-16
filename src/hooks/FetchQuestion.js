@@ -22,7 +22,7 @@ export const useFetchQuestion = () => {
       try {
        // let question = await ques;
      //   const [{questions, answers}]=await getServerData(`${process.env.REACT_APP_SERVER_HOSTNAME}/api/questions`, (data) =>data);
-        const [{questions, answers}]=await getServerData(`backendmern.vercel.app/api/questions`, (data) =>data);
+        const [{questions, answers}]=await getServerData(`https://backendmern.vercel.app/api/questions`, (data) =>data);
         console.log({ questions, answers });
         
 

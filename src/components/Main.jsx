@@ -73,8 +73,8 @@ const Main = () => {
              </button>
             </Link>
             <Link to={"LeaderB"} >
-              
-             <button className="bg-white hover:bg-gwhite p-1
+
+         <button className="bg-white hover:bg-gwhite p-1
              sm:p-4 rounded-full font-medium hover:font-semibold text-xl lg:text-xl text-dblue hover:text-blue-600 mt-10 lg:mt-4">
              LeaderBoard
              </button>

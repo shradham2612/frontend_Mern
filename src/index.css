@@ -2,13 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 .background {
   background: rgb(31, 0, 74);
   background: linear-gradient(
     180deg,
     rgba(31, 0, 74, 1) 30%,
     rgba(20, 26, 43, 1) 80%
+    
   );
+
+
+  
 }
 
 .content-table {

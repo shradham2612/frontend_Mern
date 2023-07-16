@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Main, Quiz, Result,Questions } from "./components";
+import { Main, Quiz, Result,Questions,LeaderBoard } from "./components";
 //import { CheckUserExists } from "./helper/helper";
 
 const router = createBrowserRouter([
@@ -30,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "/Questions",
     element: <Questions />,
+  },
+  {
+    path: "/LeaderB",
+    element:  <LeaderBoard />,
   },
 ]);
 

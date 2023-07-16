@@ -13,7 +13,7 @@ useEffect(() =>{
 })
 
   return (
-    <div className="text-gwhite pb-20  ">
+    <div className="text-gwhite pb-20 pt-6 ">
       <div>
         <table className="content-table text-center lg:mt-12">
           <thead className="font-semibold text-lg lg:text-2xl">

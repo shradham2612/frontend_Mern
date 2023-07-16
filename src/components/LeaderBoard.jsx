@@ -8,7 +8,7 @@ const LeaderBoard = () => {
 
   const [data,setData] = useState([])
 useEffect(() =>{
-  getServerData(`http://localhost:5000/api/result`,(res)=>{setData(res)})
+  getServerData(`https://backendmern.vercel.app/api/result`,(res)=>{setData(res)})
  // console.log({data});
 })
 

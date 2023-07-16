@@ -25,6 +25,7 @@ export const usePublishResult=(resultData)=>{
       if(result !==[] && ! username) throw new Error ("Couldn't get Result");
 
       await postServerData(`https://backendmern.vercel.app/api/result`,resultData,(data)=>data)
+    //  await postServerData(`https://backendmern.vercel.app/api/result`,resultData,(data)=>data)
     } catch (error){
       console.log(error);
     }
